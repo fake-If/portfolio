@@ -109,6 +109,27 @@ body{
   .logo{font-size:1.05rem}
 }
 
+/* Regras específicas para dispositivos móveis: botões maiores e em bloco */
+@media (max-width:520px){
+  /* Tornar botões fáceis de tocar no celular */
+  .btn, .btn-ghost{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    padding:0.9rem 1rem;
+    font-size:1rem;
+    border-radius:10px;
+    text-align:center;
+    margin:0.5rem 0;
+  }
+
+  /* Se houver um grupo de botões, empilhar com espaçamento */
+  .center-links{display:flex;flex-direction:column;gap:0.5rem;align-items:stretch}
+
+  /* Ajustes na navegação para ser mais fácil de tocar */
+  .main-nav a{padding:0.9rem 1rem}
+}
+
 /* Pequenas melhorias de acessibilidade */
 a:focus{outline:3px solid rgba(37,99,235,0.12)}
 button:focus{outline:3px solid rgba(6,182,212,0.12)}
