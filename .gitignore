@@ -1,0 +1,16 @@
+# Node / build artifacts
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+thumbs.db
+
+# IDE
+.vscode/
+
+# Logs
+npm-debug.log*
+
+# Optional: local env
+.env
