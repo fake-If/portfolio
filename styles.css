@@ -89,6 +89,19 @@ body{
   max-width:100%;
 }
 
+/* Ações rápidas abaixo da manchete (botões visíveis mesmo em mobile) */
+.header-actions{display:flex;gap:0.75rem;justify-content:center;align-items:center;padding:0.35rem 1rem 0.5rem}
+.header-actions .btn-ghost{margin:0;padding:0.45rem 0.8rem}
+
+@media (max-width:900px){
+  .header-actions{padding:0.25rem 0.75rem}
+}
+
+@media (max-width:520px){
+  .header-actions{flex-direction:column;gap:0.5rem;padding:0.5rem 1rem}
+  .header-actions .btn, .header-actions .btn-ghost{width:100%;display:block}
+}
+
 /* decor lines to mimic newspaper masthead */
 /* decoração da manchete removida (manchete está no cabeçalho) */
 
